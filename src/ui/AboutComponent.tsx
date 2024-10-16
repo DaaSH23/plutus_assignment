@@ -68,7 +68,7 @@ const AboutComponent = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default AboutComponent;
