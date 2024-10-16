@@ -9,6 +9,11 @@ interface CountryData {
     };
 }
 
+interface ChartData {
+    year: string;
+    [countryId: string]: number | string;
+}
+
 interface Props {
     countryData: CountryData;
     selectedIndicator: IndicatorKeys;
@@ -35,15 +40,15 @@ const StackedAreaComponent = ({ countryData, selectedIndicator }: Props) => {
     // };
 
     // Prepare data for the chart
-    const chartData = Object.keys(countryData).reduce((acc: any[], countryId) => {
+    const chartData: ChartData[] = Object.keys(countryData).reduce((acc: ChartData[], countryId) => {
         const indicatorData = countryData[countryId]?.[INDICATORS[selectedIndicator]];
 
         if (indicatorData) {
-            let value;
             indicatorData.forEach((entry: WorldBankData) => {
                 const existingEntry = acc.find((item) => item.year === entry.date);
+                let value;
 
-                // If the selected indicator is TOTAL_POPULATION, divide by 1 billion
+                // If the selected indicator is POPULATION, divide by 1 billion
                 if (selectedIndicator === 'POPULATION') {
                     value = entry.value !== null ? entry.value / 1e9 : 0;
                 } else {
@@ -59,7 +64,7 @@ const StackedAreaComponent = ({ countryData, selectedIndicator }: Props) => {
         }
 
         return acc;
-    }, []).sort((a, b) => a.year - b.year);
+    }, []).sort((a, b) => parseInt(a.year) - parseInt(b.year));
 
     return (
         <div className=" text-xs">
