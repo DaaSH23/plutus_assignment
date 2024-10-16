@@ -1,5 +1,5 @@
 import { WorldBankData } from "@/types";
-import React, { useState } from "react";
+import React from "react";
 import { AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, Area, Legend, ResponsiveContainer } from 'recharts';
 
 
