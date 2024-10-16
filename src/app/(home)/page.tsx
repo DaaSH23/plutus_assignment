@@ -9,6 +9,7 @@ import { FaLink, FaChartBar, FaInfoCircle } from "react-icons/fa";
 
 const Home = () => {
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [worldBankData, setWorldBankData] = useState<WorldBankData[]>([]);
   const [activeTab, setActiveTab] = useState<'home' | 'population' | 'about'>('home'); // State to manage the active tab
 
