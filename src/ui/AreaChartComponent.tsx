@@ -9,7 +9,7 @@ import {
     ResponsiveContainer
 } from 'recharts';
 import { WorldBankData } from "@/types";
-import WorldBankDatas from "./WorldBankData";
+// import WorldBankDatas from "./WorldBankData";
 
 
 interface GraphSectionProps {
