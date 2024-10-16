@@ -3,8 +3,8 @@ import "./globals.css";
 import StoreProvider from "@/lib/storeProvider";
 
 export const metadata: Metadata = {
-  title: "NextJS BoilerPlate",
-  description: "Plutus NextJS BoilerPlate for new NextJS projects",
+  title: "Assignment | Abhishek Oraon",
+  description: "Plutus NextJS Assignment by Abhishek Oraon",
 };
 
 export default function RootLayout({

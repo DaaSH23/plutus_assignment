@@ -6,7 +6,7 @@ import { RootState } from "@/lib/store/store";
 
 const ExampleComponent = () => {
   const dispatch = useAppDispatch();
-  const { value, loading, error } = useAppSelector((state: RootState) => state.yourSlice);
+  const { value, loading, error } = useAppSelector((state: RootState) => state.feature);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">

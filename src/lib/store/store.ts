@@ -3,7 +3,7 @@ import featureReducer from './featureSlice'; // Import your slice
 
 const store = configureStore({
   reducer: {
-    yourSlice: featureReducer, // Add your slice reducer here
+    feature: featureReducer, // Add your slice reducer here
   },
 });
 
