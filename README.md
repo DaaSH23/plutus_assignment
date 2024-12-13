@@ -140,13 +140,3 @@ npm run dev
 
 Open http://localhost:3000 with your browser to see the result.
 
-You can start editing the page by modifying app/page.tsx. The page auto-updates as you edit the file.
-
-## Steps After Completion
-After you're done with the implementation, you should:
-
- - Fill in the following form to let us know about your project: https://forms.gle/Y7wWEvKmjecjyBDb9
- - We will set up a 30-minute/1-hour call to discuss the project in detail.
- - We will make a decision.
-## Deadline
-We understand that you might have some commitments and might be short on time. We want to treat this exercise as a replacement for a DSA interview. With that said, the deadline for project submission is **3 days from the date you receive the email for this assignment** or one **day from the time you fork this repo**.
